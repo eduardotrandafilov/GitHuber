@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Platform, StyleSheet, Text, View } from "react-native";
-
+import TodoList from "./components/TodoList";
 console.tron.log("Carrega arquivo ./src/index.js");
 
 export default class App extends Component {
@@ -9,8 +9,9 @@ export default class App extends Component {
 
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome Eduardo!!!</Text>
+        <Text style={styles.welcome}>Welcome Eduardo</Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
+        <TodoList />
       </View>
     );
   }
